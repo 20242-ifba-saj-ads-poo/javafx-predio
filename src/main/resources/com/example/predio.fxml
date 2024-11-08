@@ -13,15 +13,15 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller">
+<VBox alignment="CENTER" prefHeight="331.0" prefWidth="378.0" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller">
     <children>
-      <HBox prefHeight="0.0" prefWidth="200.0" spacing="10.0">
+      <AnchorPane prefHeight="26.0" prefWidth="341.0">
          <children>
-              <Label contentDisplay="CENTER" prefHeight="26.0" prefWidth="44.0" text="Andares" textAlignment="CENTER" />
-            <TextField fx:id="qtdAndares" prefHeight="25.0" prefWidth="90.0" />
-            <Button mnemonicParsing="false" onAction="#gerarAndares" text="gerar" />
+              <Label contentDisplay="CENTER" prefHeight="26.0" prefWidth="80.0" text="Andares" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" />
+            <TextField fx:id="qtdAndares" layoutX="80.0" prefHeight="26.0" prefWidth="213.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="45.0" />
+            <Button layoutX="304.0" mnemonicParsing="false" onAction="#gerarAndares" text="gerar" textAlignment="RIGHT" AnchorPane.rightAnchor="0.0" />
          </children>
-      </HBox>
+      </AnchorPane>
       <TabPane fx:id="tabs" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Andar 1">
